@@ -72,8 +72,6 @@ main {
   padding: 100px 20px;
   display: flex;
   flex-direction: column;/
-<<<<<<< HEAD
-=======
 }
 
 .inner {
@@ -216,167 +214,7 @@ main {
 }
 
 .container-materias {
-  margin-left: 395.1px;
-  margin-right: 200px;
-  padding: 20px;
-}
-
-.materiais-container {
-  display: flex;       /* deixa os cards lado a lado */
-  gap: 20px;           /* espaço entre os cards */
-  margin-top: 20px;    /* afasta do título */
-}
-
-.materiais {
-  border: 2px solid #333;        /* borda interna */
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  flex: 1;                        /* divide o espaço igualmente */
->>>>>>> f032bc89c7f699731088da071acfc8f5bd80bbee
-}
-
-.inner {
   margin-left: 395px;
-}
-
-.titulo-principal {
-  font-weight: bold;
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.subtitulo {
-  color: #666666;
-  font-size: 16px;
-  text-decoration: none;
-}
-.areaprogramacao {
-  display: flex;
-  flex-direction: column;
-  margin-left: 412px;
-  margin-right: 200px;
-}
-
-.titulo1 {
-  border-left: 8px solid black;
-  padding-left: 10px;
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.tabela-programacao {
-  border: 2px solid black;
-  border-radius: 12px;
-  overflow: hidden;
-  background-color: white;
-}
-
-/* Cabeçalho */
-.linha.cabecalho {
-  background-color: #f3f3f3;
-  font-weight: bold;
-  display: grid;
-  grid-template-columns: 0.8fr 2fr 1.5fr 1fr 1fr;
-  border-bottom: 2px solid black;
-}
-
-.linha {
-  display: grid;
-  grid-template-columns: 0.8fr 2fr 1.5fr 1fr 1fr;
-  border-top: none;
-  margin: 6px 8px; /* espaçamento entre as linhas */
-  border: 2px solid black;
-  border-radius: 10px;
-}
-
-/* Colunas */
-.col {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  box-sizing: border-box;
-  border-right: 2px solid black;
-}
-
-.col:last-child {
-  border-right: none;
-}
-
-/* Altura igual em todas as linhas */
-.linha .col {
-  min-height: 70px;
-}
-
-/* bolinhas de trilha */
-.tag {
-  display: inline-block;
-  padding: 3px 10px;
-  border: 2px solid black;
-  border-radius: 20px;
-  font-size: 13px;
-}
-
-/* botões tracejados */
-.botao {
-  display: block;
-  margin: 6px 0;
-  padding: 4px 10px;
-  border: 2px dashed black;
-  border-radius: 20px;
-  background: none;
-  font-size: 13px;
-}
-
-/* Centralizar os botões */
-.col.acoes {
-  display: flex;
-  flex-direction: column; /* mantém os itens em coluna */
-  align-items: flex-start; /* alinha à esquerda */
-}
-
-.container-palestrantes {
-  margin-left: 395px;
-  padding: 20px;
-  margin-right: 200px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
-  gap: 20px;                             /* espaço entre os cards */
-  margin-top: 20px;
-}
-
-.palestrante {
-  border: 2px solid #333;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-}
-
-.palestrante img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover; 
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 10px auto;
-  image-rendering: auto; /* evita que o navegador tente pixelar a imagem */
-}
-.nome {
-  font-size: 18px;
-  margin: 5px 0;
-}
-
-.especialidade {
-  font-size: 14px;
-  color: #555;
-}
-
-.container-materias {
-  margin-left: 395.1px;
   margin-right: 200px;
   padding: 20px;
 }
@@ -394,12 +232,6 @@ main {
   text-align: center;
   flex: 1;                        /* divide o espaço igualmente */
 }
-
-footer{
-  text-align: center;
-}
-
-
 
 
 
