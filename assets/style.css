@@ -1,0 +1,67 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/*HEADER*/
+
+header{
+  margin-top: 10px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Item da esquerda */
+.esquerda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 400px; /* afasta o quadrado + texto da parede esquerda */
+}
+
+/* Quadrado */
+.quadrado {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+/* Container do meio */
+.centro {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;       /* empurra o container para a direita */
+  margin-right: auto;      /* centraliza o container no espaço restante */
+}
+
+/* Links */
+.centro a, .esquerda a {
+  text-decoration: none;
+  color: black;
+}
+
+.borda {
+  border: 2px solid black;
+  border-radius: 100px;
+  padding: 8px;
+}
+
+/*MAIN*/
+
+main {
+  margin-top: 30px;    /* espaço acima do main */
+}
+
+.container {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; 
+  width: 100%;
+  margin: 0;
+}
