@@ -233,5 +233,26 @@ main {
   flex: 1;                        /* divide o espaço igualmente */
 }
 
+.videos-container {
+  display: flex;           /* coloca os cards lado a lado */
+  gap: 20px;               /* espaço entre os cards */
+  margin-top: 20px;        /* afasta os cards do título */
+  margin-left: 412px;
+  margin-right: 200px;
+}
 
-
+.videob {
+  border: 2px solid #333;  /* borda dos cards */
+  border-radius: 10px;     /* cantos arredondados */
+  padding: 15px;
+  text-align: center;
+  flex: 1;                 /* divide igualmente o espaço disponível */
+}
+.titulo3{
+  border-left: 8px solid black;
+  padding-left: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 412px;
+}
