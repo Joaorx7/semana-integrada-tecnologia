@@ -235,18 +235,15 @@ main {
 
 .videos-container {
   display: flex;           /* coloca os cards lado a lado */
-  gap: 20px;               /* espaço entre os cards */
   margin-top: 20px;        /* afasta os cards do título */
   margin-left: 412px;
   margin-right: 200px;
 }
 
 .videob {
-  border: 2px solid #333;  /* borda dos cards */
   border-radius: 10px;     /* cantos arredondados */
-  padding: 15px;
   text-align: center;
-  flex: 1;                 /* divide igualmente o espaço disponível */
+  flex: 0.5;                 /* divide igualmente o espaço disponível */
 }
 .titulo3{
   border-left: 8px solid black;
@@ -256,3 +253,80 @@ main {
   margin-bottom: 10px;
   margin-left: 412px;
 }
+
+.videob iframe{
+  border-radius: 10px;
+}
+
+.container-imagens {
+  margin: 20px 200px; /* ajuste conforme sua página */
+}
+
+.imagens-container {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: nowrap;       /* impede quebra de linha */
+  justify-content: flex-start;
+}
+
+.imagens {
+ width: 300px;   /* um pouco maior */
+height: 243px;  /* proporcional */
+  text-align: center;
+  flex-shrink: 0;          /* impede que encolham */
+  margin-left: 25px;       /* ajustável */
+}
+
+.imagens:first-child {
+  margin-left: 0;          /* remove margem da primeira imagem */
+}
+
+.imagens img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 2px solid #333;
+  object-fit: cover;
+  margin-left: 213px;
+}
+
+
+.titulo4{
+  border-left: 8px solid black;
+  padding-left: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 213px;
+}
+
+.Feedback {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  
+}
+
+.container-feedBacks {
+  border: 3px solid #333;   /* borda grande ao redor */
+  border-radius: 20px;
+  padding: 50px;
+  width: 69%;               /* tamanho ajustável da caixa */
+  display: flex;
+  justify-content: center;  /* centraliza o botão dentro */
+  background-color: #f9f9f9; /* cor de fundo leve (opcional) */
+  margin-left: 210px;
+}
+
+.Linkfeedback button {
+  padding: 15px 35px;
+  font-size: 18px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+
+
+
