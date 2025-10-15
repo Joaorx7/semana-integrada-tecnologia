@@ -300,31 +300,52 @@ height: 243px;  /* proporcional */
   margin-left: 213px;
 }
 
-.Feedback {
+.container-feedBacks {
+  border: 3px solid #333;
+  border-radius: 20px;
+  padding: 30px;         /* mantém a borda acolhedora */
+  width: 64%;
   display: flex;
-  flex-direction: column;
-  margin-left: 200px;
-  
+  justify-content: center;
+  background-color: #f9f9f9;
+  margin-left: 412px;
 }
 
-.container-feedBacks {
-  border: 3px solid #333;   /* borda grande ao redor */
-  border-radius: 20px;
-  padding: 50px;
-  width: 69%;               /* tamanho ajustável da caixa */
+.Linkfeedback {
   display: flex;
-  justify-content: center;  /* centraliza o botão dentro */
-  background-color: #f9f9f9; /* cor de fundo leve (opcional) */
-  margin-left: 210px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;             /* espaço entre texto e botão */
+}
+
+.texto-feedback {
+  color: #666666;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 0;          /* remove o grande deslocamento */
 }
 
 .Linkfeedback button {
-  padding: 15px 35px;
+  padding: 15px 40px;
   font-size: 18px;
   border: 2px solid #333;
-  border-radius: 10px;
+  border-radius: 100px;
   cursor: pointer;
+  transition: 0.3s;
+}
 
+.Linkfeedback button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.titulo5{
+  border-left: 8px solid black;
+  padding-left: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 412px;
 }
 
 
