@@ -177,7 +177,7 @@ main {
 .container-palestrantes {
   margin-left: 395px;
   padding: 20px;
-  margin-right: 200px;
+  margin-right: 181px;
 }
 
 .cards {
@@ -215,7 +215,7 @@ main {
 
 .container-materias {
   margin-left: 395px;
-  margin-right: 200px;
+  margin-right: 181px;
   padding: 20px;
 }
 
@@ -233,31 +233,43 @@ main {
   flex: 1;                        /* divide o espaço igualmente */
 }
 
-.videos-container {
-  display: flex;           /* coloca os cards lado a lado */
-  margin-top: 20px;        /* afasta os cards do título */
-  margin-left: 412px;
-  margin-right: 200px;
-}
-
-.videob {
-  border-radius: 10px;     /* cantos arredondados */
-  text-align: center;
-  flex: 0.5;                 /* divide igualmente o espaço disponível */
-}
-.titulo3{
+/* Título da seção */
+.titulo3 {
   border-left: 8px solid black;
   padding-left: 10px;
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 10px;
-  margin-left: 412px;
+  margin-left: 412px; /* mantém alinhado com outras seções */
 }
 
-.videob iframe{
+/* Container dos vídeos */
+.videos-container {
+  display: flex;
+  gap: 15px;              /* espaço entre vídeos */
+  justify-content: flex-start;
+  flex-wrap: nowrap;       /* mantém todos na mesma linha */
+  padding-left: 412px;     /* empurra o grupo para frente */
+}
+
+/* Cada vídeo */
+.videob {
+  position: relative;
+  width: 28.1%;              /* largura proporcional para 4 vídeos na linha */
+  padding-top: 14%;      /* mantém proporção 16:9 */
   border-radius: 10px;
+  flex-shrink: 0;          /* impede que encolham demais */
 }
 
+/* Iframe do vídeo */
+.videob iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;     /* bordas arredondadas do vídeo */
+}
 .container-imagens {
   margin: 20px 200px; /* ajuste conforme sua página */
 }
@@ -270,7 +282,7 @@ main {
 }
 
 .imagens {
- width: 300px;   /* um pouco maior */
+ width: 303px;   /* um pouco maior */
 height: 243px;  /* proporcional */
   text-align: center;
   flex-shrink: 0;          /* impede que encolham */
@@ -304,7 +316,7 @@ height: 243px;  /* proporcional */
   border: 3px solid #333;
   border-radius: 20px;
   padding: 30px;         /* mantém a borda acolhedora */
-  width: 64%;
+  width: 1230px;
   display: flex;
   justify-content: center;
   background-color: #f9f9f9;
