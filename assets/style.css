@@ -1,20 +1,29 @@
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  background-color: #041936;
 }
 
 /*HEADER*/
 
 header {
-  margin-top: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que fique acima do conteúdo */
+  padding: 10px;
+  background-image: url("img/fundo.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .menu {
+  position: fixed;
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0 20px;
+  background-color: transparent; 
 }
 
 /* Item da esquerda */
@@ -22,25 +31,17 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 400px; /* afasta o quadrado + texto da parede esquerda */
 }
 
-/* Quadrado */
-.quadrado {
-  width: 20px;
-  height: 20px;
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: transparent;
-  flex-shrink: 0;
+.textoevento{
+  margin-left: 60px;
 }
 
 /* Container do meio */
 .centro {
   display: flex;
   gap: 15px;
-  margin-left: auto; /* empurra o container para a direita */
-  margin-right: auto; /* centraliza o container no espaço restante */
+  margin-left: 900px;
 }
 
 /* Links */
@@ -48,15 +49,11 @@ header {
 .esquerda {
   text-decoration: none;
   color: black;
-}
-.bordas {
-  border: 2px solid black;
-  border-radius: 100px;
-  padding: 8px;
+  font-size: 20px
 }
 
 a, a:visited, a:hover, a:active {
-  color: black;           /* mantém preto sempre */
+  color: rgb(255, 255, 255);           /* mantém preto sempre */
   text-decoration: none;  /* tira sublinhado em qualquer estado */
 }
 
@@ -67,12 +64,11 @@ main {
 }
 
 .container {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  padding: 100px 20px;
+  padding: 350px 0px;
   display: flex;
-  flex-direction: column;/
+  flex-direction: column;
 }
+
 
 .inner {
   margin-left: 395px;
@@ -80,13 +76,14 @@ main {
 
 .titulo-principal {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .subtitulo {
-  color: #666666;
-  font-size: 16px;
+  color: #797978;
+  font-size: 30px;
   text-decoration: none;
 }
 .areaprogramacao {
@@ -102,13 +99,14 @@ main {
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #f3f3f3;                                               
 }
 
 .tabela-programacao {
   border: 2px solid black;
   border-radius: 12px;
   overflow: hidden;
-  background-color: white;
+  rgb(12, 42, 179)
 }
 
 /* Cabeçalho */
@@ -118,6 +116,7 @@ main {
   display: grid;
   grid-template-columns: 0.8fr 2fr 1.5fr 1fr 1fr;
   border-bottom: 2px solid black;
+  background-color: rgb(12, 42, 179);
 }
 
 .linha {
@@ -125,8 +124,9 @@ main {
   grid-template-columns: 0.8fr 2fr 1.5fr 1fr 1fr;
   border-top: none;
   margin: 6px 8px; /* espaçamento entre as linhas */
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
+  background-color: #000000;
 }
 
 /* Colunas */
@@ -135,7 +135,9 @@ main {
   align-items: center;
   padding: 10px;
   box-sizing: border-box;
-  border-right: 2px solid black;
+  border-right: 2px solid rgb(238, 238, 238);
+  background-color: #000000;
+  color: #f3f3f3;
 }
 
 .col:last-child {
@@ -154,6 +156,8 @@ main {
   border: 2px solid black;
   border-radius: 20px;
   font-size: 13px;
+  background-color: #303233;
+  color: #f3f3f3;
 }
 
 /* botões tracejados */
@@ -161,10 +165,12 @@ main {
   display: block;
   margin: 6px 0;
   padding: 4px 10px;
-  border: 2px dashed black;
+  border: 2px dashed rgb(255, 255, 255);
   border-radius: 20px;
   background: none;
   font-size: 13px;
+  color: rgb(255, 255, 255);
+  background-color: #303233;
 }
 
 /* Centralizar os botões */
@@ -192,6 +198,7 @@ main {
   border-radius: 10px;
   padding: 15px;
   text-align: center;
+  background-color: #0b2133;
 }
 
 .palestrante img {
@@ -206,11 +213,12 @@ main {
 .nome {
   font-size: 18px;
   margin: 5px 0;
+  color: #f3f3f3;
 }
 
 .especialidade {
   font-size: 14px;
-  color: #555;
+  color: #f3f3f3;
 }
 
 .container-materias {
@@ -227,6 +235,7 @@ main {
 
 .materiais {
   border: 2px solid #333;        /* borda interna */
+  background-color: #0b2133;
   border-radius: 10px;
   padding: 15px;
   text-align: center;
@@ -241,6 +250,7 @@ main {
   font-weight: bold;
   margin-bottom: 10px;
   margin-left: 412px; /* mantém alinhado com outras seções */
+  color: #f3f3f3;
 }
 
 /* Container dos vídeos */
@@ -310,6 +320,7 @@ height: 243px;  /* proporcional */
   font-weight: bold;
   margin-bottom: 10px;
   margin-left: 213px;
+  color: #f3f3f3;
 }
 
 .container-feedBacks {
@@ -319,8 +330,8 @@ height: 243px;  /* proporcional */
   width: 1230px;
   display: flex;
   justify-content: center;
-  background-color: #f9f9f9;
   margin-left: 412px;
+  background-color: #0b2133;
 }
 
 .Linkfeedback {
@@ -331,7 +342,7 @@ height: 243px;  /* proporcional */
 }
 
 .texto-feedback {
-  color: #666666;
+  color: #ffffff;
   font-size: 18px;
   text-decoration: none;
   margin-top: 0;          /* remove o grande deslocamento */
@@ -344,6 +355,8 @@ height: 243px;  /* proporcional */
   border-radius: 100px;
   cursor: pointer;
   transition: 0.3s;
+  background-color: #182361;
+  color: #f3f3f3;
 }
 
 .Linkfeedback button:hover {
@@ -358,6 +371,17 @@ height: 243px;  /* proporcional */
   font-weight: bold;
   margin-bottom: 10px;
   margin-left: 412px;
+  color: #f3f3f3;
+}
+
+.footer {
+  border-top: 1px dashed #ccc; /* linha fina e pontilhada */
+  text-align: center;          /* centraliza o texto */
+  padding: 10px 0;             /* espaço interno */
+  margin-top: 50px;            /* espaço acima do footer */
+  color: #f3f3f3;              /* tom de cinza do texto */
+  font-size: 14px;             /* tamanho da fonte */
+  background-color: transparent; /* sem fundo */
 }
 
 
