@@ -11,7 +11,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Garante que fique acima do conteúdo */
+  z-index: 1000;
   padding: 10px;
   background-image: url("img/fundo.jpg");
   background-size: cover;
@@ -53,14 +53,14 @@ header {
 }
 
 a, a:visited, a:hover, a:active {
-  color: rgb(255, 255, 255);           /* mantém preto sempre */
-  text-decoration: none;  /* tira sublinhado em qualquer estado */
+  color: rgb(255, 255, 255);
+  text-decoration: none; 
 }
 
 /*MAIN*/
 
 main {
-  margin-top: 30px; /* espaço acima do main */
+  margin-top: 30px;
 }
 
 .container {
@@ -106,7 +106,7 @@ main {
   border: 2px solid black;
   border-radius: 12px;
   overflow: hidden;
-  rgb(12, 42, 179)
+  background-color: #ffffff;
 }
 
 /* Cabeçalho */
@@ -123,7 +123,7 @@ main {
   display: grid;
   grid-template-columns: 0.8fr 2fr 1.5fr 1fr 1fr;
   border-top: none;
-  margin: 6px 8px; /* espaçamento entre as linhas */
+  margin: 6px 8px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   background-color: #000000;
@@ -176,8 +176,8 @@ main {
 /* Centralizar os botões */
 .col.acoes {
   display: flex;
-  flex-direction: column; /* mantém os itens em coluna */
-  align-items: flex-start; /* alinha à esquerda */
+  flex-direction: column; 
+  align-items: flex-start; 
 }
 
 .container-palestrantes {
@@ -188,13 +188,13 @@ main {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
-  gap: 20px;                             /* espaço entre os cards */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;                           
   margin-top: 20px;
 }
 
 .palestrante {
-  border: 2px solid #333;
+  border: 2px solid white;
   border-radius: 10px;
   padding: 15px;
   text-align: center;
@@ -208,7 +208,7 @@ main {
   border-radius: 50%;
   display: block;
   margin: 0 auto 10px auto;
-  image-rendering: auto; /* evita que o navegador tente pixelar a imagem */
+  image-rendering: auto; 
 }
 .nome {
   font-size: 18px;
@@ -228,18 +228,18 @@ main {
 }
 
 .materiais-container {
-  display: flex;       /* deixa os cards lado a lado */
-  gap: 20px;           /* espaço entre os cards */
-  margin-top: 20px;    /* afasta do título */
+  display: flex;       
+  gap: 20px;           
+  margin-top: 20px;    
 }
 
 .materiais {
-  border: 2px solid #333;        /* borda interna */
+  border: 2px solid white;        
   background-color: #0b2133;
   border-radius: 10px;
   padding: 15px;
   text-align: center;
-  flex: 1;                        /* divide o espaço igualmente */
+  flex: 1;                       
 }
 
 /* Título da seção */
@@ -249,26 +249,26 @@ main {
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 10px;
-  margin-left: 412px; /* mantém alinhado com outras seções */
+  margin-left: 412px; 
   color: #f3f3f3;
 }
 
 /* Container dos vídeos */
 .videos-container {
   display: flex;
-  gap: 15px;              /* espaço entre vídeos */
+  gap: 15px;              
   justify-content: flex-start;
-  flex-wrap: nowrap;       /* mantém todos na mesma linha */
-  padding-left: 412px;     /* empurra o grupo para frente */
+  flex-wrap: nowrap;       
+  padding-left: 412px;     
 }
 
 /* Cada vídeo */
 .videob {
   position: relative;
-  width: 28.1%;              /* largura proporcional para 4 vídeos na linha */
-  padding-top: 14%;      /* mantém proporção 16:9 */
+  width: 28.1%;             
+  padding-top: 14%;      
   border-radius: 10px;
-  flex-shrink: 0;          /* impede que encolham demais */
+  flex-shrink: 0;         
 }
 
 /* Iframe do vídeo */
@@ -278,36 +278,37 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;     /* bordas arredondadas do vídeo */
+  border-radius: 10px;     
 }
+
 .container-imagens {
-  margin: 20px 200px; /* ajuste conforme sua página */
+  margin: 20px 200px; 
 }
 
 .imagens-container {
   display: flex;
   margin-top: 20px;
-  flex-wrap: nowrap;       /* impede quebra de linha */
+  flex-wrap: nowrap;      
   justify-content: flex-start;
 }
 
 .imagens {
- width: 303px;   /* um pouco maior */
-height: 243px;  /* proporcional */
+ width: 303px;   
+height: 243px;  
   text-align: center;
-  flex-shrink: 0;          /* impede que encolham */
-  margin-left: 25px;       /* ajustável */
+  flex-shrink: 0;         
+  margin-left: 25px;       
 }
 
 .imagens:first-child {
-  margin-left: 0;          /* remove margem da primeira imagem */
+  margin-left: 0;          
 }
 
 .imagens img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  border: 2px solid #333;
+  border: 2px solid white;
   object-fit: cover;
   margin-left: 213px;
 }
@@ -324,9 +325,9 @@ height: 243px;  /* proporcional */
 }
 
 .container-feedBacks {
-  border: 3px solid #333;
+  border: 3px solid white;
   border-radius: 20px;
-  padding: 30px;         /* mantém a borda acolhedora */
+  padding: 30px;         
   width: 1230px;
   display: flex;
   justify-content: center;
@@ -338,20 +339,20 @@ height: 243px;  /* proporcional */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;             /* espaço entre texto e botão */
+  gap: 15px;             
 }
 
 .texto-feedback {
   color: #ffffff;
   font-size: 18px;
   text-decoration: none;
-  margin-top: 0;          /* remove o grande deslocamento */
+  margin-top: 0;          
 }
 
 .Linkfeedback button {
   padding: 15px 40px;
   font-size: 18px;
-  border: 2px solid #333;
+  border: 2px solid white;
   border-radius: 100px;
   cursor: pointer;
   transition: 0.3s;
@@ -360,7 +361,7 @@ height: 243px;  /* proporcional */
 }
 
 .Linkfeedback button:hover {
-  background-color: #333;
+  background-color: white;
   color: white;
 }
 
@@ -375,15 +376,11 @@ height: 243px;  /* proporcional */
 }
 
 .footer {
-  border-top: 1px dashed #ccc; /* linha fina e pontilhada */
-  text-align: center;          /* centraliza o texto */
-  padding: 10px 0;             /* espaço interno */
-  margin-top: 50px;            /* espaço acima do footer */
-  color: #f3f3f3;              /* tom de cinza do texto */
-  font-size: 14px;             /* tamanho da fonte */
-  background-color: transparent; /* sem fundo */
+  border-top: 1px dashed #ccc; 
+  text-align: center;          
+  padding: 10px 0;             
+  margin-top: 50px;            
+  color: #f3f3f3;             
+  font-size: 14px;            
+  background-color: transparent;
 }
-
-
-
-
