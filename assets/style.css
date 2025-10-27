@@ -288,13 +288,13 @@ main {
 .imagens-container {
   display: flex;
   margin-top: 20px;
-  flex-wrap: nowrap;      
+     
   justify-content: flex-start;
 }
 
 .imagens {
- width: 303px;   
-height: 243px;  
+  width: 303px;   
+  height: 243px;  
   text-align: center;
   flex-shrink: 0;         
   margin-left: 25px;       
@@ -550,33 +550,53 @@ height: 243px;
     padding: 10px 25px;
     font-size: 16px;
   }
-    .imagens-container {
+
+
+    /* Container da galeria */
+    /* Container da galeria */
+    /* Container pai */
+   .container-imagens {
+    margin: 0 5px;   /* pequena margem lateral para não encostar na borda */
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box; /* garante que padding/margem não aumentem largura */
+  }
+
+  /* Container da galeria */
+  .imagens-container {
     display: flex;
-    flex-direction: column;  /* empilha as imagens verticalmente */
-    align-items: center;     /* centraliza horizontalmente */
-    justify-content: center;
-    width: 100%;             /* ocupa toda a largura da tela */
-    margin: 0;               /* remove margens antigas */
-    padding: 0 10px;         /* pequeno padding nas laterais */
+    flex-direction: column;   /* empilha verticalmente */
+    align-items: flex-start;  /* alinha à esquerda */
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     gap: 15px;
+    box-sizing: border-box;
   }
 
   /* Cada card de imagem */
   .imagens {
-    width: 100%;             /* ocupa toda a largura disponível */
-    max-width: 350px;        /* limita para não ficar gigante em telas médias */
-    height: auto;            /* mantém proporção */
-    margin: 0;               /* remove margens antigas */
+    width: 98%;              /* ocupa toda largura do container */
+    max-width: 100%;          /* nunca ultrapassa o container */
+    height: auto;
+    margin: 0;                /* remove margens antigas */
+    box-sizing: border-box;
   }
 
   /* A imagem em si */
   .imagens img {
-    width: 100%;             /* ocupa todo o container */
-    height: auto;            /* mantém proporção */
+    width: 100%;              /* preenche o container */
+    height: auto;
     border-radius: 15px;
     border: 2px solid white;
     object-fit: cover;
+    margin: 0;
     display: block;
-    margin: 0 auto;
+    box-sizing: border-box;   /* garante que a borda não ultrapasse a tela */
+  }
+  
+  .Feedback{
+    width: 93%;
   }
 }
