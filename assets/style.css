@@ -384,3 +384,170 @@ height: 243px;
   font-size: 14px;            
   background-color: transparent;
 }
+
+/* ===========================
+   RESPONSIVIDADE COMPLETA
+=========================== */
+
+/* --------- TABLET (até 1024px) --------- */
+@media (max-width: 1024px) {
+  /* Menu */
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .centro {
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Seção principal */
+  .container {
+    padding: 200px 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .inner {
+    margin-left: 0;
+  }
+  .titulo-principal {
+    font-size: 40px;
+  }
+  .subtitulo {
+    font-size: 22px;
+  }
+
+  /* Programação */
+  .areaprogramacao {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+  }
+  .linha, .linha.cabecalho {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .col {
+    border-right: none;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .col.acoes {
+    align-items: center;
+  }
+
+  /* Palestrantes */
+  .container-palestrantes {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Materiais */
+  .container-materias {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+  }
+  .materiais-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Vídeos */
+  .videos-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .videob {
+    width: 90%;
+    padding-top: 50%; /* mantém proporção */
+    margin-bottom: 20px;
+  }
+
+  /* Fotos */
+  .imagens-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 0;
+  }
+  .imagens {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin-left: 0;
+  }
+  .imagens img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid white;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Feedback */
+  .container-feedBacks {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  /* Títulos */
+  .titulo1, .titulo3, .titulo4, .titulo5 {
+    margin-left: 0;
+    font-size: 22px;
+  }
+}
+
+/* --------- CELULAR (até 480px) --------- */
+@media (max-width: 480px) {
+  /* Seção principal */
+  .titulo-principal {
+    font-size: 28px;
+  }
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  /* Botões da programação */
+  .botao {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  /* Logo do menu */
+  .textoevento {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 12px;
+  }
+
+  /* Galeria de vídeos */
+  .videob {
+    padding-top: 56%; /* proporção 16:9 */
+  }
+
+  
+
+  /* Cards e materiais */
+  .cards, .materiais-container {
+    gap: 10px;
+  }
+
+  /* Feedback */
+  .Linkfeedback button {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+}
